@@ -2,24 +2,251 @@
 <html lang="ja">
 <meta charset="utf-8">
 <head>
-<title>lesson</title>
+<title>JS Lesson</title>
+	<script src="js/sample.js"></script>
+</head>
 <body>
+
 	<script>
+	
+		//
+		/*
 		var name ="変数";
-		name ="変数の箱";
+		name = "変数の箱";
+		var num = 128;//
+		var array = ["a","b","c"];
+		var obj = {a: "c"};//
+		var fun = function(){};//
 		
-		var str = 'string data';//文字列
-		var num = 128;//数値
-		var arr = ['a','b'];//配列
-		var obj = {a: 'b'}//オブジェクト
-		var fun = function(){}//関数
+		var firstName = "山田";
+		var lastName = "太郎";
+		var fullName = firstName + lastName;
 		
+		var firstNameA = "鈴木";
+		var nameA = firstNameA + "一郎";
+		
+		var result = 10 + 20;
+		
+		var x = 10;
+		var y = 40;
+		var z = 5;
+		
+		var resultB = x + y;
+		var resultC = y - x;
+		var resultD = x * y;
+		var resultE = y / x;
+		var resultF = x % y;
+		
+		var x = x + 4;
+		x++;
+		console.log(x);
+		console.log(x + y * z);//かけ算が優先
+		console.log((x + y) * z);//()内が優先
+		console.log(resultF);
+		console.log(resultE);
+		console.log(resultD);
+		console.log(resultC);
+		console.log(resultB);
+		console.log(result);
+		console.log(10);
+		console.log(12.4);
+		console.log(nameA);
+		console.log(fullName);
+		console.log(firstName + lastName);
+		console.log(num);
 		console.log(name);
-		console.log(str);
-		console.log(arr);
+		console.log(array);
 		console.log(obj);
 		console.log(fun);
-  	</script>
+		*/
+		
+		/*
+		var list = ["りんご", "みかん", "ぶどう"];
+		var apple = list[0];
+		var orange = list[1];
+		var grape = list[2];
+		
+		console.log(grape);
+		console.log(orange);
+		console.log(apple);
+		console.log(list);
+		
+		console.log(list.length);
+		*/
+		
+		/*
+		var person = {
+			name: "山田太郎",
+			age: 23,
+			gender: "male",
+			address:{
+				postcode: "100-0000",
+				pref:"東京都",
+				city:"千代田区"
+				}
+			};
+		
+		var postcode = person.address.postcode;
+		console.log(postcode);
+		
+		var personB = {
+			name:"鈴木一郎",
+			age:20,
+			gender:"male"
+			}
+			var key = "name";
+			var name = personB[key];
+			
+			console.log(name);
+		*/
+		
+		/*
+		var name = "山田太郎";
+		
+		console.log(name === "山田太郎");
+		
+		if(name === "山田太郎"){
+			console.log(name);
+			}
+		*/
+		/*
+		var age = 30;
+		if(age >= 20){
+			console.log(age ,"20歳以上です");
+			}
+			
+		var name = "太郎";
+		if(name) {
+			console.log("名前が設定されています" ,name);
+			}
+		*/
+		
+		/*
+		var x = 120;
+		
+		if(x > 100){
+			console.log("xが100より大きい値です");
+			}else if(x > 50) {
+				console.log("xが100以下かつ50より大きい値です")
+			}else{
+				console.log("xが50以下の値です");
+			}
+		*/
+		/*
+		var i = 0;
+		while (i < 10){
+			console.log(i);
+			i++;
+			}
+		//console.log(i);
+		
+		
+		for(var i = 0; i < 10; i++){
+			console.log(i);
+			}
+		*/
+		
+		//---------------
+		/*
+		var fluit = ["みかん","りんご","ぶどう"];
+		var value;
+		
+		value = fluit[0];
+		console.log(value);
+		
+		value = fluit[1];
+		console.log(value);
+		
+		value = fluit[2];
+		console.log(value);
+		*/
+		
+		/*
+		var fluit = ["めろん","りんご","みかん","しいたけ","ぶどう"];
+		var len = fluit.length;
+		var value;
+		
+		for(var i = 0; i < len; i++){
+			value = fluit[i];
+			console.log(value);
+			}
+		*/
+		
+		//---------------------
+		
+		/*
+		function add() {
+			var a = 10;
+			var b = 20;
+			
+			var result = a + b;
+			
+			console.log(result);
+			
+			}
+		
+		add();
+		*/
+		/*
+		var add = function(){
+			var a = 10;
+			var b = 30;
+			var result = a + b;
+			
+			console.log(result);
+			
+			}
+			add();
+		*//*
+		
+		var person = {
+			name:"鈴木一郎",
+			age:20,
+			say: function() {
+				console.log("こんにちわー");
+				}
+			}
+			person.say();
+		*/
+		
+		/*
+		var person = {
+			name: "山田太郎",
+			age:23,
+			gender:"male"
+			};
+			
+			person.say = function(){
+				console.log("こんにちわ");
+				};
+			
+			person.say();
+		*/
+		/*
+		function func(a){
+			console.log(a);
+			}
+		func();
+		*/
+		
+		function add(a,b){
+			var result = a + b;
+			return result;
+			}
+			
+			var result1 = add(1, 1);
+			console.log(result1);
+			
+			var result2 = add(10, 20);
+			console.log(result2);
+			
+			var result3 = add(result1, result2);
+			console.log(result3);
+		
+		
+		
+		
+    </script>
+	
 </body>
-</head>
 </html>
